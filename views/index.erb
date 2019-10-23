@@ -1,0 +1,9 @@
+<h1>Testing faxes</h1>
+
+<form action="/send" method="POST">
+  <div class="form-group">
+    <label for="destination">Fax destination</label>
+    <input type="text" class="form-control" id="destination" name="destination" value="<%= ENV['FAX_TO'] %>">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
